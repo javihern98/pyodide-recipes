@@ -21,8 +21,8 @@ build:
         --disable-dependency-tracking \
         --disable-shared \
         --without-python \
-        --with-iconv="${WASM_LIBRARY_DIR}/lib" \
-        --with-zlib="${WASM_LIBRARY_DIR}/lib" \
+        --with-iconv="${WASM_LIBRARY_DIR}" \
+        --with-zlib="${WASM_LIBRARY_DIR}" \
         --with-lzma="no" \
         --prefix=${WASM_LIBRARY_DIR}
     emmake make -j ${PYODIDE_JOBS:-3}
